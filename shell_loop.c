@@ -71,7 +71,7 @@ int find_builtin(info_t *info)
 		if (_strcmp(info->argv[0], builtintbl[x].type) == 0)
 		{
 			info->line_count++;
-			built_in_ret = builtintbl[i].func(info);
+			built_in_ret = builtintbl[x].func(info);
 			break;
 		}
 	return (built_in_ret);
